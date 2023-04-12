@@ -4,6 +4,8 @@ import { subjectsContext } from '../context/ContextApi'
 const Landingpage = () => {
   const { subjects, setSubjects } = useContext(subjectsContext);
   console.log(subjects);
+  let sub = Object.keys(subjects);
+  console.log(sub)
   return (
 
     <div className='w-[80%] m-auto flex flex-row py-32'>
