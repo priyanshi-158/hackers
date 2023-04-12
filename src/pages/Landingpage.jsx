@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import image from '../assets/react.svg'
-
+import { subjectsContext } from '../context/ContextApi'
 const Landingpage = () => {
+  const { subjects, setSubjects } = useContext(subjectsContext);
+  console.log(subjects);
   return (
-    
+
     <div className='flex flex-row'>
       <div className='w-[50%]'>
         <p className='font-bold text-3xl text-left pb-2'>Organise Your Notes, Video Lectures and PDFs , all in one-place</p>
