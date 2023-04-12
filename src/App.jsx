@@ -4,6 +4,7 @@ import './App.css'
 import Rootlayout from './layout/Rootlayout';
 import Landingpage from './pages/Landingpage';
 import { subjectsContext } from './context/ContextApi'
+import Form from './components/Form';
 
 function App() {
   const { subjects, setSubjects } = useContext(subjectsContext);
@@ -15,6 +16,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Rootlayout />}>
           <Route path='/' element={<Landingpage />}></Route>
+
+          <Route path='/form' element={<Form/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
