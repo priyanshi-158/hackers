@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar"
 
 const Rootlayout = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
     <header>
         <Navbar/>
     </header>
-    <main>
+    <main className="overflow-x-hidden">
         <Outlet/>
     </main>
     </div>
